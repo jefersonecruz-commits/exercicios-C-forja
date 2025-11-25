@@ -3,17 +3,26 @@
 
 int main(){
 
-    int idade;
-    char pais[50], estado[20];
-    printf("qual seu nome?: ");
-    fgets(pais, 50, stdin);
-    printf("qual seu nome?: ");
+    //declara uma string com tamanho maximo de 50 caracters
+    char cidade[50];
+    char estado[50];
+     int ano; 
+     int respSub;
+
+    printf("digite sua cidade: ");
+    fgets(cidade, 50, stdin);
+
+     printf("digite seu estado: ");
     fgets(estado, 50, stdin);
-    printf("digite sua idade: ");
-    scanf("%d",&pais);
 
 
-    printf("olá %svoce tem %d anos . \n", pais,estado, idade);
+     printf("Qual é o seu ano de nascimento?:");
+    scanf("%d", &ano); 
+
+    respSub = 2025 - ano;
+
+   printf("Você nasceu em %s e no estado %s e tem %d anos. \n", cidade, estado, respSub) ;
+
     system("pause");
     return 0;
 }
