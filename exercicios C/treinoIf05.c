@@ -8,7 +8,7 @@ int main(){
     int idade;
 
     printf("informe uma idade: ");
-    scanf("%d", &idade);
+    scanf(" %d", &idade);
 
     if(idade >= 15 && idade <= 18){
         printf("a idade esta entre 15 e 18 ");
